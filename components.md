@@ -53,8 +53,8 @@ Sólo se verá o el botón Llamar o el botón Colgar, nunca los dos a la vez.
 
     - Recibe:
     - Estado:
-       . es activo si phone.lengh < 9 && isCall false
-       · es inactivo si phone.lengh = 9 && isCall true
+       . es activo si phone.lengh < 9  isCall-false
+       · es inactivo si phone.lengh = 9  isCall-true
 
     - Muestra:
       · Mostrar 10 botones cada boton mostrarà un numero String (0 al 9)
