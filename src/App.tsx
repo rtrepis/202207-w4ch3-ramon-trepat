@@ -1,56 +1,20 @@
 import React from "react";
+import Action from "./components/Action/Action";
+import Display from "./components/Display/Display";
+import Info from "./components/Info/Info";
+import Keyboards from "./components/Keyboards/Keyboards";
 
 function App() {
   return (
     <>
       <div className="container">
-        <span className="message">Calling...</span>
+        <Info />
         <main className="phone">
-          <div className="keyboard-container">
-            <ol className="keyboard">
-              <li>
-                <button className="key">1</button>
-              </li>
-              <li>
-                <button className="key">2</button>
-              </li>
-              <li>
-                <button className="key">3</button>
-              </li>
-              <li>
-                <button className="key">4</button>
-              </li>
-              <li>
-                <button className="key">5</button>
-              </li>
-              <li>
-                <button className="key">6</button>
-              </li>
-              <li>
-                <button className="key">7</button>
-              </li>
-              <li>
-                <button className="key">8</button>
-              </li>
-              <li>
-                <button className="key">9</button>
-              </li>
-              <li>
-                <button className="key">0</button>
-              </li>
-              <li>
-                <button className="key big">delete</button>
-              </li>
-            </ol>
-          </div>
+          <Keyboards />
           <div className="actions">
-            <span className="number">667359961</span>
-            <a href="a" className="call">
-              Call
-            </a>
-            <a href="a" className="hang active">
-              Hang
-            </a>
+            <Display />
+            <Action text="Call" />
+            <Action text="Hang" isActive />
           </div>
         </main>
       </div>
