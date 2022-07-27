@@ -1,0 +1,16 @@
+import "./Action.css";
+
+interface ActionProps {
+  text: string;
+  isActive?: boolean;
+}
+
+const Action = ({ text, isActive }: ActionProps): JSX.Element => {
+  return (
+    <a href="a" className={`${text.toLowerCase()} ${isActive ? "active" : ""}`}>
+      {text}
+    </a>
+  );
+};
+
+export default Action;
