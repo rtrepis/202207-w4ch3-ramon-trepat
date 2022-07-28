@@ -1,7 +1,11 @@
 import "./Display.css";
 
-const Display = (): JSX.Element => {
-  return <span className="number">667359961</span>;
+interface DisplayProps {
+  phoneString?: string;
+}
+
+const Display = ({ phoneString }: DisplayProps): JSX.Element => {
+  return <span className="number">{phoneString}</span>;
 };
 
 export default Display;
