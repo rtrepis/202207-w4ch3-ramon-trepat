@@ -7,8 +7,8 @@ interface PhoneProvaiderProps {
 
 const PhoneProvaider = ({ children }: PhoneProvaiderProps): JSX.Element => {
   const phoneInitial: IPhoneContext = {
-    phone: "1234556789",
-    isCall: true,
+    phone: "123456789",
+    isCall: false,
   };
 
   return (

@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import phoneContext from "../../store/contexts/appPhoneContext";
 import "./Action.css";
 
 interface ActionProps {
@@ -7,7 +9,11 @@ interface ActionProps {
 
 const Action = ({ text, isActive }: ActionProps): JSX.Element => {
   return (
-    <a href="a" className={`${text.toLowerCase()} ${isActive ? "active" : ""}`}>
+    <a
+      href="a"
+      className={`${text.toLowerCase()} ${isActive ? "active" : ""}`}
+      onClick={() => {}}
+    >
       {text}
     </a>
   );
