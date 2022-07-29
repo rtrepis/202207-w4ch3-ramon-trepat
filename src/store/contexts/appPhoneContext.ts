@@ -2,7 +2,7 @@ import { createContext } from "react";
 import IPhoneContext from "../../types/interfaces";
 
 const phoneContext = createContext<IPhoneContext>({
-  phone: "12345678",
+  phone: "",
   isCall: false,
 });
 

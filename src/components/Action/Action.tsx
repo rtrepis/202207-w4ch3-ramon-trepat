@@ -7,7 +7,11 @@ interface ActionProps {
 
 const Action = ({ text, isActive }: ActionProps): JSX.Element => {
   return (
-    <a href="a" className={`${text.toLowerCase()} ${isActive ? "active" : ""}`}>
+    <a
+      href="a"
+      className={`${text.toLowerCase()} ${isActive ? "active" : ""}`}
+      onClick={() => {}}
+    >
       {text}
     </a>
   );
