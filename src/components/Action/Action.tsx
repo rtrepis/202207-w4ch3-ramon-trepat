@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import phoneContext from "../../store/contexts/appPhoneContext";
 import "./Action.css";
 
 interface ActionProps {
